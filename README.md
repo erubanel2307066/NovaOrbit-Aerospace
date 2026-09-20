@@ -1,16 +1,31 @@
-# React + Vite
+# NovaOrbit Aerospace
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Aplicación web de demostración para un centro de control de misiones espaciales. La interfaz presenta un acceso con cuentas locales y una dashboard profesional con datos ficticios de operaciones orbitales.
 
-Currently, two official plugins are available:
+## Dashboard de operaciones
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+La vista protegida `/dashboard` incluye:
 
-## React Compiler
+- Resumen diario y estado operativo del sistema.
+- Indicadores de misiones activas, satélites en órbita, datos procesados y próximo hito.
+- Misiones de ejemplo con estado, avance y fechas estimadas.
+- Visualización de flota, telemetría y actividad reciente.
+- Bloque de preparación para la misión Lumen Relay.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Todos los indicadores y nombres operativos son datos ficticios creados para demostrar la interfaz.
 
-## Expanding the Oxlint configuration
+## Ejecutar el proyecto
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+```bash
+npm install
+npm run dev
+```
+
+Abre la dirección indicada por Vite. Registra una cuenta para acceder a la dashboard; los datos de sesión se guardan localmente en el navegador.
+
+## Tecnologías
+
+- React 19
+- React Router
+- Vite
+- Tailwind CSS
